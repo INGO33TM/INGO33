@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingo33 - Gaming Enthusiast</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #1a1a1a;
+            color: #fff;
+            transition: background-color 0.5s, color 0.5s;
+        }
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #1a1a1a;
+            color: #fff;
+            font-size: 24px;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+        button {
+            padding: 15px;
+            margin-bottom: 10px;
+            background-color: #4285f4;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #2c6efa;
+        }
+        section {
+            background-color: #333;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #fff;
+        }
+        p {
+            line-height: 1.5;
+        }
+        /* Dark Mode Styles */
+        body.dark-mode {
+            background-color: #111;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Ingo33 - Gaming Enthusiast
+        <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    </header>
+
+    <main>
+        <section>
+            <h2>About Ingo33</h2>
+            <p>Welcome to the epic journey of Ingo33, your go-to destination for thrilling gaming content! Dive into the virtual worlds, experience jaw-dropping adventures, and stay tuned for the latest updates!</p>
+        </section>
+
+        <section>
+            <h2>Latest Videos</h2>
+            <ul>
+                <li><a href="#">🎮 Epic Moments in Gaming</a></li>
+                <li><a href="#">🚀 Exploring New Game Worlds</a></li>
+                <li><a href="#">🔥 Top Strategies for Victory</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Visit Ingo33's YouTube Channel</h2>
+            <button onclick="window.location.href='http://www.youtube.com/@ingo33'">🎥 Visit Now</button>
+        </section>
+
+        <section>
+            <h2>Gamer's Info</h2>
+            <button onclick="displayInfo()">ℹ️ Info</button>
+            <p id="infoText" style="display:none;">Hey, I'm Rohan—a passionate gamer from India who conquers both the Indian and North American servers. My UID in the Indian server is 6917509434. Join me on this gaming adventure!</p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2024 Ingo33. All rights reserved.
+    </footer>
+
+    <script>
+        function displayInfo() {
+            var infoText = document.getElementById("infoText");
+            infoText.style.display = "block";
+        }
+
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
